@@ -1,0 +1,276 @@
+/* 全局样式 */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  .header,
+  .category-tags,
+  .section,
+  .content {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .qrcode {
+    width: 100px;
+    height: 100px;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+
+  .section-description {
+    font-size: 14px;
+  }
+
+  .small-tag {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .download-button,
+  .visit-button {
+    width: 100%;
+  }
+}
+
+/* 头部样式 */
+.header {
+  background-color: #ff7373;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.share-link {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.share-link img {
+  width: 30px;
+  height: 30px;
+}
+
+/* 分类和标签样式 */
+.category-tags {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ff7373;
+}
+
+.tab {
+  font-size: 16px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.tab.active {
+  color: #ff7373;
+  border-bottom: 2px solid #ff7373;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #666;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tag.active {
+  background-color: #ff7373;
+  color: #fff;
+  border-color: #ff7373;
+}
+
+/* 新增板块样式 */
+.section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.qrcode-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.qrcode {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-tag {
+  background-color: #ff7373;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.section-title {
+  font-size: 20px;
+  color: #ff7373;
+  margin: 0;
+}
+
+.section-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.small-tag {
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.download-button,
+.visit-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 20px;
+  border: 2px solid #ff7373;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #ff7373;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download-button:hover,
+.visit-button:hover {
+  background-color: #ff7373;
+  color: #fff;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* 主内容区域样式 */
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  padding: 20px;
+  border-left: 5px solid #ff7373;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card h2 img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff7373;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #ff5252;
+}
