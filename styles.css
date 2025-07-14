@@ -164,6 +164,7 @@ body {
 .qrcode-container {
   display: flex;
   align-items: center;
+  justify-content: center; /* 二维码居中 */
   gap: 15px;
   margin-bottom: 10px;
 }
@@ -184,9 +185,49 @@ body {
   display: inline-block;
 }
 
+.purple-tag {
+  background-image: linear-gradient(to right, #c79fef, #b37fe7); /* 紫色渐变 */
+}
+
+.card h3 {
+  color: #ff7373; /* AI女友+AI男友这种字体的颜色 */
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: center; /* 居中显示 */
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify; /* 段落两端对齐 */
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center; /* 标签居中 */
+}
+
+.small-tag {
+  background-color: #fff0f6;
+  color: #ff7373;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pink-tag {
+  background-color: #ffd6e8; /* 粉色背景 */
+  color: #ff7373; /* 文字颜色 */
+}
+
 .visit-button {
-  display: inline-block;
-  margin-top: 15px;
+  display: block;
+  margin: 0 auto; /* 访问链接居中 */
   padding: 10px 20px;
   background-image: linear-gradient(to right, #ffd6e8, #ffc2d1);
   color: #ff7373;
