@@ -22,6 +22,35 @@ body {
     flex: 1;
     font-size: 14px;
   }
+
+  .fixed-section h2 img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .fixed-section h2 {
+    font-size: 18px;
+  }
+
+  .fixed-section p {
+    font-size: 14px;
+  }
+
+  .fixed-section .learn-more {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .qrcode {
+    width: 100px;
+    height: 100px;
+  }
+
+  .visit-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
 }
 
 /* 固定模块样式 */
